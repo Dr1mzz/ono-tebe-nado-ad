@@ -10,6 +10,18 @@
     justify-self: start;
 }
 
+.menu__list {
+    display: flex;
+    gap: 31px;
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__list-item_no-bullit {
+    list-style: none;
+}
+
 .menu__link {
     font-family: 'Raleway';
     font-style: normal;
@@ -17,6 +29,10 @@
     font-size: 18px;
     line-height: 21px;
     color: #000000;
+    text-decoration: underline;
+}
+
+.menu__list-item_no-bullit .menu__link {
     text-decoration: none;
 }
 
@@ -162,7 +178,7 @@
 
 .lots__card-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 25px;
     list-style: none;
     padding: 0;
@@ -174,6 +190,7 @@
     flex-direction: column;
     width: 334px;
     min-height: 596px;
+    flex-shrink: 0;
 }
 
 .card-link {
